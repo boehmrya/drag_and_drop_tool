@@ -1,4 +1,7 @@
-.item.wrap {
+.items {
+  padding: 20px;
+}
+.item {
   padding: .375rem .75rem;
   background-clip: padding-box;
   border: 1px solid #ced4da;
