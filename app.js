@@ -1,5 +1,8 @@
-function dragstart_handler(ev) {
- console.log("dragStart");
- // Add the target element's id to the data transfer object
- ev.dataTransfer.setData("text/plain", ev.target.id);
-}
+jQuery(document).ready(function() {
+  var item = $('.items-wrap .item');
+  item.draggable({
+    containment: '.items-wrap .items',
+    cursor: 'move',
+    snap: '.items-wrap .items'
+  } );
+});
